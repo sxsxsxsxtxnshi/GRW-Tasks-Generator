@@ -1,0 +1,47 @@
+<ul class="header-main__col1__list">
+    li class="header-main__col1__list__item">Коани</li>
+    <li class="header-main__col1__list__item">Табакаль</li>
+    <li class="header-main__col1__list__item">Монте-Пунку</li>
+    <li class="header-main__col1__list__item">Вилья-Верде</li>
+    <li class="header-main__col1__list__item">Кайманес</li>
+    <li class="header-main__col1__list__item">Монтуйок</li>
+    <li class="header-main__col1__list__item">Инка-Камина</li>
+    <li class="header-main__col1__list__item">Ремансо</li>
+    <li class="header-main__col1__list__item">Барвечос</li>
+    <li class="header-main__col1__list__item">Итакуа</li>
+    <li class="header-main__col1__list__item">Окоро</li>
+    <li class="header-main__col1__list__item">Флор-де-Оро</li>
+    <li class="header-main__col1__list__item">Н.П. Агуа-Верде</li>
+    <li class="header-main__col1__list__item">Пукара</li>
+    <li class="header-main__col1__list__item">Либертад</li>
+    <li class="header-main__col1__list__item">Мохокойо</li>
+    <li class="header-main__col1__list__item">Эспириту-Санто</li>
+    <li class="header-main__col1__list__item">Медиа-Луна</li>
+    <li class="header-main__col1__list__item">Сан-Матео</li>
+</ul>header-main__col1__list
+
+/*&__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+    &__item {
+        padding: 12px 20px;
+        //font-weight: $fontWeightSemiBold;
+                                
+        outline: 1px solid #000;
+        @extend %borderRadius;
+
+        transition: .3s all;
+        &:hover {
+        background-color: rgba(0,0,0,0.05);
+        }
+                            
+        cursor: pointer;
+
+        &.active {
+            background-color: rgba(0,0,0,0.15);
+        }
+    }
+}
