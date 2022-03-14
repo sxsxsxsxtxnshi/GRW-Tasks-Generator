@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Generator which can generate some task in GRW. Enjoy this!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRW | Tasks Generator</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/img/other/favicon.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/other/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/5afeaf5839.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,100 +32,122 @@
                         <a class="header-nav__link" href="https://discord.gg/tb8CAX5QV7" target="_blank">My Discord Server</a>
                     </nav>
                 </div>   
-
-                <div class="header-main">
-                    <div class="header-main__sup">
-                        <h2 class="header-main__sup__title">Tasks Generator</h2>
-                        <p class="header-main__sup__info">I decided create this generator cause sometimes singleplayer GRW becomes very bored. Here is you can choose params and generate a mission.</p>
-                    </div>
-
-                    <div class="header-main__main">
-                        <div class="header-main__col1">
-                            <h3 class="header-main__col1__title">Params</h3>  
-                            <div class="header-main__col1__list">
-                                <div class="header-main__col1__params">
-                                    <span class="header-main__col1__param hud">HUD: <span class="header-main__col1__param__span span1">Off</span></span>
-                                    <span class="header-main__col1__param guns">Generate guns: <span class="header-main__col1__param__span span2">Off</span></span>
-                                    <span class="header-main__col1__param modules">Generate modules: <span class="header-main__col1__param__span span3">Off</span></span>    
-                                </div>    
-                            </div>
-                            <button class="header-main__col1__btn">Create a task</button>
-                        </div><!--header-main__col1-->
-                        <div class="header-main__col2__wrapper">
-                            <div class="header-main__col2">
-                                <div class="header-main__col2__image"></div>    
-                                <div class="header-main__col2__info__wrapper">
-                                    <div class="header-main__col2__info">
-                                        <div class="header-col2-info__sup">
-                                            <h3 class="header-col2-info__sup__location location">Location: <span class="header-col2 name"></span></h3>
-                                            <h3 class="header-col2-info__sup__task task">Task: <span class="header-col2 type"></span></h3>
-                                        </div>
-
-                                        <div class="header-col2-info__sub">
-                                            <ul class="header-col2-info__sub__list">
-                                                <li class="header-col2-info__sub__list__item hud">HUD: <span class="header-col2-info__sub__list__span hud"></span></li>
-                                                <li class="header-col2-info__sub__list__item coordinates">Coordinates: <span class="header-col2-info__sub__list__span coordinates"></span></li>
-                                                <li class="header-col2-info__sub__list__item time">Time: <span class="header-col2-info__sub__list__span time"></span></li>
-                                                <li class="header-col2-info__sub__list__item transport">allowed Transport: <span class="header-col2-info__sub__list__span transport"></span></li>
-                                                <li class="header-col2-info__sub__list__item typeOfClothes">Type of clothes: <span class="header-col2-info__sub__list__span typeOfClothes"></span></li>
-                                                <li class="header-col2-info__sub__list__item bodyTop">Body Top: <span class="header-col2-info__sub__list__span bodyTop"></span></li>
-                                                <li class="header-col2-info__sub__list__item bodyDown">Body Down: <span class="header-col2-info__sub__list__span bodyDown"></span></li>
-                                                <li class="header-col2-info__sub__list__item armor">Armor: <span class="header-col2-info__sub__list__span armor"></span></li>
-                                                <li class="header-col2-info__sub__list__item headwear">Headwear: <span class="header-col2-info__sub__list__span headwear"></span></li>
-                                                <li class="header-col2-info__sub__list__item facemask">Facemask: <span class="header-col2-info__sub__list__span facemask"></span></li>
-                                                <li class="header-col2-info__sub__list__item headphones">Headphones: <span class="header-col2-info__sub__list__span headphones"></span></li>
-                                                <li class="header-col2-info__sub__list__item nightvision">Nightvision: <span class="header-col2-info__sub__list__span nightvision"></span></li>
-                                            </ul><!--gear-->
-                                            
-                                            <div class="header-col2-info__sub__list__guns">
-                                                <ul class="header-col2-info__sub__list weapon">
-                                                    <li class="header-col2-info__sub__list__item weapon">Primary weapon: <span class="header-col2-info__sub__list__span header-col2-primaryGun__name"></span></li>
-                                                    <li class="header-col2-info__sub__list__item modules">
-                                                         <ul class="header-col2-info__sub__list__item__LIST">
-                                                            <li class="header-col2-info__sub__list__item">Scope: <span class="header-col2-info__sub__list__span header-col2-primaryGun__scope"></span>
-                                                            </li>
-                                                            <li class="header-col2-info__sub__list__item">Grip: <span class="header-col2-info__sub__list__span header-col2-primaryGun__grip"></span>
-                                                            </li>
-                                                            <li class="header-col2-info__sub__list__item">Laser: <span class="header-col2-info__sub__list__span header-col2-primaryGun__laser"></span></li>
-                                                            <li class="header-col2-info__sub__list__item">Magazine: <span class="header-col2-info__sub__list__span header-col2-primaryGun__magazine"></span></li>
-                                                            <li class="header-col2-info__sub__list__item">Barrel: <span class="header-col2-info__sub__list__span header-col2-primaryGun__barrel"></span></li>
-                                                            <li class="header-col2-info__sub__list__item">Muffle: <span class="header-col2-info__sub__list__span header-col2-primaryGun__muffle"></span></li>
-                                                            <li class="header-col2-info__sub__list__item">Buttstock: <span class="header-col2-info__sub__list__span header-col2-primaryGun__buttstock"></span></li>   
-                                                        </ul class="header-col2-info__sub__list"> <!--modules_list--> 
-                                                    </li><!--modules_li-->
-                                                </ul><!--second_weapon-->
-                                                <ul class="header-col2-info__sub__list weapon">
-                                                    <li class="header-col2-info__sub__list__item weapon">Second weapon: <span class="header-col2-info__sub__list__span header-col2-secondGun__name"></span></li>
-                                                    <li class="header-col2-info__sub__list__item modules">
-                                                        <ul class="header-col2-info__sub__list__item__LIST">
-                                                            <li class="header-col2-info__sub__list__item">Scope: <span class="header-col2-info__sub__list__span header-col2-secondGun__scope"></span></li>
-                                                            <li class="header-col2-info__sub__list__item">Magazine: <span class="header-col2-info__sub__list__span header-col2-secondGun__magazine"></span></li>
-                                                            <li class="header-col2-info__sub__list__item">Laser: <span class="header-col2-info__sub__list__span header-col2-secondGun__laser"></span></li>
-                                                            <li class="header-col2-info__sub__list__item">Barrel: <span class="header-col2-info__sub__list__span header-col2-secondGun__barrel"></span></li>
-                                                            <li class="header-col2-info__sub__list__item">Muffle: <span class="header-col2-info__sub__list__span header-col2-secondGun__muffle"></span></li>    
-                                                            <li class="header-col2-info__sub__list__item">Buttstock: <span class="header-col2-info__sub__list__span header-col2-secondGun__buttstock"></span></li> 
-                                                        </ul><!--modules_list-->    
-                                                    </li><!--modules_li-->
-                                                </ul><!--second_weapon-->
-                                                <ul class="header-col2-info__sub__list pistol">
-                                                    <li class="header-col2-info__sub__list__item pistol">Help weapon: <span class="header-col2-info__sub__list__span header-col2-helpGun__name"></span></li>
-                                                </ul>
-                                            </div><!--guns-->
-                                        </div><!--header-sub-->
-                                    </div><!--header-col2__info-->    
-                                </div><!--header-col2__info__wrapper-->    
-                            </div><!--header-col2--> 
-                        </div><!--header-col2__wrapper--> 
-                    </div><!--header-main__main--> 
-                </div> <!--header-main--> 
-                <div class="header-footer">
-                    <div class="header-footer__sup">
-                        <span class="header-footer__sup__title">Bomj-design by <a class="header-footer__sup__title__link" href="https://github.com/sxsxsxsxtxnshi" target="_blank">sxsxsxsxtxnshi</a></span>
-                    </div>
-                </div>
             </div><!--header-item-->
         </div>
     </header><!--header-->
+
+    <main class="page-main">
+        <div class="page-main__info">
+            <div class="container">
+            <div class="page-main__sup">
+                <h2 class="page-main__sup__title">Tasks Generator</h2>
+                <p class="page-main__sup__info">I decided create this generator cause sometimes singleplayer GRW becomes very bored. Here is you can choose params and generate a mission.</p>    
+            </div>
+            </div>
+        </div>
+        
+        <section class="generator">
+            <div class="container">
+                <div class="generator-item">
+                    <div class="generator__col1">
+                    <h3 class="generator__col1__title">Params</h3>  
+                        <div class="generator__col1__list">
+                            <div class="generator__col1__params">
+                                <span class="generator__col1__param hud">HUD: Off</span>
+                                <span class="generator__col1__param guns">Generate guns: Off</span>
+                                <span class="generator__col1__param modules">Generate modules: Off</span>    
+                            </div>    
+                        </div>
+                        <button class="generator__col1__btn">Create a task</button>
+                    </div><!--generator__col1-->
+                    <div class="generator__col2__wrapper">
+                        <div class="generator__col2">
+                            <div class="generator__col2__image"></div>    
+                            <div class="generator__col2__info__wrapper">
+                                <div class="generator__col2__info">
+                                    <div class="generator-col2-info__sup">
+                                        <h3 class="generator-col2-info__sup__location location">Location:</h3>
+                                        <h3 class="generator-col2-info__sup__task task">Task:</h3>
+                                    </div>
+
+                                    <div class="generator-col2-info__sub">
+                                        <ul class="generator-col2-info__sub__list">
+                                            <li class="generator-col2-info__sub__list__item hud hidden">HUD:</li>
+                                            <li class="generator-col2-info__sub__list__item coordinates">Coordinates:</li>
+                                            <li class="generator-col2-info__sub__list__item time">Time:</li>
+                                            <li class="generator-col2-info__sub__list__item transport">allowed Transport:</li>
+                                            <li class="generator-col2-info__sub__list__item clothing">Type of clothes:</li>
+                                            <li class="generator-col2-info__sub__list__item bodyTop">Body Top:</li>
+                                            <li class="generator-col2-info__sub__list__item bodyDown">Body Down:</li>
+                                            <li class="generator-col2-info__sub__list__item armor">Armor:</li>
+                                            <li class="generator-col2-info__sub__list__item headwear">Headwear:</li>
+                                            <li class="generator-col2-info__sub__list__item nightvision hidden">Nightvision:</li>
+                                            <li class="generator-col2-info__sub__list__item facemask">Facemask:</li>
+                                            <li class="generator-col2-info__sub__list__item headphones">Headphones:</li>
+                                        </ul><!--gear-->
+                                                    
+                                        <div class="generator-col2-info__sub__list__guns hidden">
+                                            <ul class="generator-col2-info__sub__list primary weapon">
+                                                <li class="generator-col2-info__sub__list__item primary weapon">Primary weapon:</li>
+                                                <li class="generator-col2-info__sub__list__item modules hidden">
+                                                        <ul class="generator-col2-info__sub__list__item__LIST">
+                                                        <li class="generator-col2-info__sub__list__item primary scope">Scope:</li>
+                                                        <li class="generator-col2-info__sub__list__item primary grip">Grip:</li>
+                                                        <li class="generator-col2-info__sub__list__item primary laser">Laser:</li>
+                                                        <li class="generator-col2-info__sub__list__item primary magazine">Magazine:</li>
+                                                        <li class="generator-col2-info__sub__list__item primary barrel">Barrel:</li>
+                                                        <li class="generator-col2-info__sub__list__item primary muzzle">Muzzle:</li>
+                                                        <li class="generator-col2-info__sub__list__item primary buttstock">Buttstock:</li>   
+                                                    </ul class="generator-col2-info__sub__list"> <!--modules_list--> 
+                                                </li><!--modules_li-->
+                                            </ul><!--second_weapon-->
+                                            <ul class="generator-col2-info__sub__list second weapon">
+                                                <li class="generator-col2-info__sub__list__item second weapon">Second weapon:</li>
+                                                <li class="generator-col2-info__sub__list__item modules hidden">
+                                                    <ul class="generator-col2-info__sub__list__item__LIST">
+                                                        <li class="generator-col2-info__sub__list__item second scope">Scope:</li>
+                                                        <li class="generator-col2-info__sub__list__item second magazine">Magazine:</li>
+                                                        <li class="generator-col2-info__sub__list__item second laser">Laser</li>
+                                                        <li class="generator-col2-info__sub__list__item second barrel">Barrel:</li>
+                                                        <li class="generator-col2-info__sub__list__item second muzzle">Muzzle:</li>    
+                                                        <li class="generator-col2-info__sub__list__item second buttstock">Buttstock:</li> 
+                                                    </ul><!--modules_list-->    
+                                                </li><!--modules_li-->
+                                            </ul><!--second_weapon-->
+                                            <ul class="generator-col2-info__sub__list help weapon hidden">
+                                                <li class="generator-col2-info__sub__list__item pistol hidden">Pistol:</li>
+                                            </ul>
+                                        </div><!--guns-->
+                                    </div><!--header-sub-->
+                                </div><!--header-col2__info-->    
+                            </div><!--header-col2__info__wrapper-->    
+                        </div><!--header-col2--> 
+                    </div><!--header__col2__wrapper-->      
+                </div>
+                   
+            </div>
+            
+        </section><!--generator__main-->  
+
+
+
+
+
+
+
+    </main> <!--page-main-->
+    <footer class="page-footer">
+        <div class="page-footer__ending">
+            <div class="container">
+                <div class="page-footer__sup">
+                    <span class="page-footer__sup__title">Bomj-design by <a class="page-footer__sup__title__link" href="https://github.com/sxsxsxsxtxnshi" target="_blank">sxsxsxsxtxnshi</a></span>    
+                </div>
+            </div>    
+        </div><!--page-footer__ending-->
+    </footer><!--page-footer-->
+
+
+    <!--other_code-->
     <div class="modal-about__wrapper">
         <div class="modal-about">
             <div class="modal-about__info__wrapper">
