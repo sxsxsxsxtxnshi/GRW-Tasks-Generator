@@ -5,6 +5,7 @@ $textColor:rgba(0,0,0,0.8);
 $fontWeight: 500; 
 $fontWeightSemiBold: 600;
 $clickScale:0.9;
+$listGap:0.35em;
 %borderRadius {
     border-radius: 25px;
 }
@@ -19,3 +20,12 @@ $clickScale:0.9;
     text-decoration: underline;
     font-weight: $fontWeight;
 }
+
+//screensWidth
+$width2k: 2560px;
+$laptop_L: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile_L:425px;
+$mobile_M:375px;
+$mobile_S:320px;
