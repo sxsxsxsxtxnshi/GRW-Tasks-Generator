@@ -421,20 +421,17 @@ if (gettedPrimary === 'G2' || gettedPrimary === 'L85A2' || gettedPrimary === 'MD
     primaryGunButtstock.classList.add('hidden');
 };
 //primaryButtstocks
-
+sniperButtstocks = sniperButtstocksBefore;
 secondGunButtstock.classList.remove('hidden');
 if (gettedSecond === 'M14') {
-    sniperButtstocks = sniperButtstocksBefore;
     sniperButtstocks = ['Extended Buttstock','Folded Buttstock',];
 };
 
 if (gettedSecond === 'SR25' || gettedSecond === 'Dragunov (SVD)') {
-    sniperButtstocks = sniperButtstocksBefore;
     sniperButtstocks = ['Compensated Buttstock',];
 };
 
 if (gettedSecond === 'M40A5' || gettedSecond === 'SRSA1' || gettedSecond === 'HTI') {
-    sniperButtstocks = sniperButtstocksBefore;
     secondGunButtstock.classList.add('hidden');
 };
 //secondButtstocks
@@ -917,19 +914,17 @@ genBtn.onclick = function createMission() {
     };
     //primaryButtstocks
 
+    sniperButtstocks = sniperButtstocksBefore;
     secondGunButtstock.classList.remove('hidden');
     if (gettedSecond === 'M14') {
-        sniperButtstocks = sniperButtstocksBefore;
         sniperButtstocks = ['Extended Buttstock','Folded Buttstock',];
     };
 
     if (gettedSecond === 'SR25' || gettedSecond === 'Dragunov (SVD)') {
-        sniperButtstocks = sniperButtstocksBefore;
         sniperButtstocks = ['Compensated Buttstock',];
     };
 
     if (gettedSecond === 'M40A5' || gettedSecond === 'SRSA1' || gettedSecond === 'HTI') {
-        sniperButtstocks = sniperButtstocksBefore;
         secondGunButtstock.classList.add('hidden');
     };
     //secondButtstocks
