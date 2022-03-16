@@ -399,7 +399,14 @@ body {
     background-position: 30%;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+  .header-nav {
+    flex-direction: column;
+  }
+  .header-nav__link.modal {
+    display: none !important;
+  }
+
   .generator__col2-info__sup {
     flex-direction: column;
     gap: 0.5em !important;

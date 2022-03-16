@@ -360,6 +360,13 @@ body {
 }//tablet responsive
 
 @media (max-width:$mobile_L) {
+    .header-nav {
+        flex-direction: column;
+        &__link.modal {
+            display: none !important;
+        }
+    }
+
     .generator__col2 {
         &-info__sup {
             flex-direction: column;
