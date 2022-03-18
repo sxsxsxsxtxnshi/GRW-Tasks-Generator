@@ -13,13 +13,16 @@ body {
     overflow-x: hidden;
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 
 .container {
     height: 100%;
     width: 75%;
     margin: 0 auto;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: $primaryBgColor;
 }
 
 //work
@@ -257,6 +260,8 @@ body {
                     padding: 1.2em;
                     padding-right: 2em;
                     margin-left: 1em;
+
+                    white-space: nowrap;
                 }
 
                 &__info.task {
@@ -304,11 +309,65 @@ body {
             }//generator-col2__sub
         }//generator-col2_info
     }//generator-col2
-}//generator__main
-    
+}//generator
+
+.main-accordeon {
+    &__item {
+        color: $textColor;
+        
+        &__sup {
+            display: flex;
+            justify-content: space-between;
+
+            background: rgba(255,255,255, 0.4);
+
+            padding: 1em 2em;
+            width: 100%;
+
+            cursor: pointer;
+
+            &.active .fa-chevron-right {
+                transform: rotate(0deg) !important;
+            }
+        }
+
+        
+
+        &__col1 {
+            text-transform: uppercase;
+        }//main-accordeon__item--col1 
+        
+        &__col2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .fa-chevron-right {
+                transform: rotate(90deg);
+            }
+        }//main-accordeon__item--col2    
+        
+
+        .main-accordeon__item__info {
+            padding: 1em;
+            padding-bottom: 2em;
+
+            border-top: 1px solid rgba(0,0,0,0.1);
+            background-color: $primaryBgColor;
+
+            &__description {
+                color: $textColor;
+            }
+        }//main-accordeon__item__info
+    }//main-accordeon__item
+}//main-accordeon
+//main
 
 .page-footer {
     &__sup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-top: 1px solid $textColor;
         text-align: center;
 
@@ -354,7 +413,7 @@ body {
     }
 
     .generator__col2__image {
-        //max-width: 90% !important;
+        max-width: 90% !important;
         background-position: 30%;
     }
 }//tablet responsive
@@ -385,6 +444,7 @@ body {
             margin-left: 0 !important;
             border-right: 0!important;
             border-bottom: 2px solid #000;
+
         }
 
         &__info.task {
@@ -410,26 +470,4 @@ body {
     }
 }//mobile_M responsive
 
-//@media (max-width:$mobile_S) {
-//}//mobile_S responsive
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Commit#6, final commit as i think. Enjoy :)
