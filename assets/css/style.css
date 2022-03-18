@@ -201,8 +201,9 @@ body {
   text-transform: capitalize;
   text-align: center;
   padding: 0.65em 1em;
-  outline: 1px solid #000;
+  outline: 1px solid rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  color: inherit;
   transition: 0.3s all;
 }
 .page-header .header-sup .header-nav__link:hover {
@@ -226,10 +227,7 @@ body {
 }
 .page-main__sup__title {
   font-size: 2.5em;
-  margin-bottom: 5px;
-}
-.page-main__sup__info {
-  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.35em;
 }
 
 .generator .generator-item {
@@ -243,6 +241,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 .generator .generator__col1__title {
   font-size: 2em;
@@ -259,7 +258,6 @@ body {
   padding: 0.65em 1.4em;
   margin-bottom: 0.6em;
   border: 8px solid;
-  color: rgba(0, 0, 0, 0.8);
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -284,7 +282,7 @@ body {
   font-weight: 600;
   font-size: 1.3em;
   padding: 1em 1.5em;
-  color: rgba(0, 0, 0, 0.8);
+  color: inherit;
   background-color: rgba(0, 0, 0, 0.25);
   outline: 8px solid rgba(0, 0, 0, 0.8);
 }
@@ -296,6 +294,7 @@ body {
 .generator .generator__col2 {
   display: inline-block;
   width: 100%;
+  color: #000;
 }
 .generator .generator__col2__image {
   width: auto;
@@ -369,7 +368,7 @@ body {
   background: #000;
 }
 
-.main-accordeon__item {
+.main-accordeon {
   color: rgba(0, 0, 0, 0.8);
 }
 .main-accordeon__item__sup {
@@ -399,9 +398,6 @@ body {
   padding-bottom: 2em;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
-}
-.main-accordeon__item .main-accordeon__item__info__description {
-  color: rgba(0, 0, 0, 0.8);
 }
 
 .page-footer__sup {
